@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: vc6sim - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\wangjsh\AppData\Local\Temp\RSPB9A1.tmp" with contents
+[
+/nologo /MDd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wangjsh\Desktop\飞控系统仿真平台\vc6sim\vc6sim\Missile.cpp"
+"C:\Users\wangjsh\Desktop\飞控系统仿真平台\vc6sim\vc6sim\Para_set.cpp"
+"C:\Users\wangjsh\Desktop\飞控系统仿真平台\vc6sim\vc6sim\vc6sim.cpp"
+"C:\Users\wangjsh\Desktop\飞控系统仿真平台\vc6sim\vc6sim\vc6simDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\wangjsh\AppData\Local\Temp\RSPB9A1.tmp" 
+Creating temporary file "C:\Users\wangjsh\AppData\Local\Temp\RSPB9A2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/vc6sim.pdb" /debug /machine:I386 /out:"Debug/vc6sim.exe" /pdbtype:sept 
+".\Debug\Com_Filter.obj"
+".\Debug\Filter_Init.obj"
+".\Debug\GeneralVars.obj"
+".\Debug\Initi_Aim.obj"
+".\Debug\Matrix.obj"
+".\Debug\Missile.obj"
+".\Debug\Nav_Com.obj"
+".\Debug\Navigation.obj"
+".\Debug\Para_set.obj"
+".\Debug\StdAfx.obj"
+".\Debug\vc6sim.obj"
+".\Debug\vc6simDlg.obj"
+".\Debug\vc6sim.res"
+]
+Creating command line "link.exe @C:\Users\wangjsh\AppData\Local\Temp\RSPB9A2.tmp"
+<h3>Output Window</h3>
+Compiling...
+Missile.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+Para_set.cpp
+vc6sim.cpp
+vc6simDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+vc6sim.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

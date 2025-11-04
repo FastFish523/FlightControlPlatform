@@ -1,0 +1,416 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\vc6sim.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\vc6sim.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 vc6sim"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "vc6sim 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_VC6SIM_DIALOG DIALOGEX 0, 0, 376, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "vc6sim"
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "控制系统标准数学仿真程序",IDC_STATIC,181,15,97,8,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "仿真参数设置",IDC_para_Set,15,42,67,17
+    PUSHBUTTON      "开始仿真",IDC_start_sim,15,69,67,17
+    PUSHBUTTON      "退出",IDC_data_analize,15,98,67,17
+    GROUPBOX        "功能按键",IDC_STATIC,9,27,83,96
+    GROUPBOX        "仿真结果",IDC_STATIC,94,27,270,97
+    LTEXT           "东向偏差",IDC_STATIC,108,58,33,8
+    LTEXT           "北向偏差",IDC_STATIC,108,89,33,8
+    LTEXT           "综合偏差",IDC_STATIC,197,59,33,8
+    LTEXT           "落地倾角",IDC_STATIC,197,90,33,8
+    LTEXT           "落地速度",IDC_STATIC,278,58,33,8
+    LTEXT           "飞行时间",IDC_STATIC,278,89,33,8
+    EDITTEXT        IDC_err_e,144,56,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_err_n,144,87,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_err_zh,233,57,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_stop_pitch,233,88,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_stop_v,314,56,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_stop_t,314,87,41,12,ES_AUTOHSCROLL
+END
+
+IDD_PARA DIALOG DISCARDABLE  0, 0, 404, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Para_set"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,173,187,50,14
+    GROUPBOX        "弹结构参数",IDC_STATIC,9,8,130,173
+    EDITTEXT        IDC_Mass0,47,37,25,12,ES_AUTOHSCROLL
+    LTEXT           "质量(kg)",IDC_STATIC,16,39,29,8
+    EDITTEXT        IDC_L,44,158,20,13,ES_AUTOHSCROLL
+    LTEXT           "长度(m)",IDC_STATIC,14,160,27,8
+    EDITTEXT        IDC_Serf,100,158,33,13,ES_AUTOHSCROLL
+    LTEXT           "面积(m2)",IDC_STATIC,69,160,31,8
+    EDITTEXT        IDC_JX0,47,76,25,13,ES_AUTOHSCROLL
+    LTEXT           "JX(kg.m2)",IDC_STATIC,14,79,33,8
+    EDITTEXT        IDC_JY0,47,97,25,13,ES_AUTOHSCROLL
+    LTEXT           "JY(kg.m2)",IDC_STATIC,14,100,33,8
+    EDITTEXT        IDC_JZ0,47,118,25,13,ES_AUTOHSCROLL
+    LTEXT           "JZ(kg.m2)",IDC_STATIC,14,121,33,8
+    EDITTEXT        IDC_P0,47,57,25,12,ES_AUTOHSCROLL
+    LTEXT           "推力(N)",IDC_STATIC,18,58,26,8
+    EDITTEXT        IDC_Mass1,77,37,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P1,77,57,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Mass2,108,37,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P2,108,57,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JX1,77,76,25,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JY1,77,97,25,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JZ1,77,118,25,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JX2,108,76,25,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JY2,108,97,25,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JZ2,108,118,25,13,ES_AUTOHSCROLL
+    LTEXT           "T1",IDC_STATIC,56,13,9,8
+    EDITTEXT        IDC_G_Cabin0,47,139,25,13,ES_AUTOHSCROLL
+    LTEXT           "质心(mm)",IDC_STATIC,14,142,33,8
+    EDITTEXT        IDC_G_Cabin1,77,139,25,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_G_Cabin2,108,139,25,13,ES_AUTOHSCROLL
+    GROUPBOX        "拉偏+干扰",IDC_STATIC,142,8,96,122
+    LTEXT           "气动比例拉偏",IDC_STATIC,146,21,49,8
+    LTEXT           "气动常值拉偏",IDC_STATIC,146,38,49,8
+    COMBOBOX        IDC_ep_air_flag,196,20,36,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ed_air_flag,196,37,36,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "质心拉偏(前,上,右)mm",IDC_STATIC,146,52,77,8
+    EDITTEXT        IDC_mdox,146,64,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_mdoy,176,64,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_mdoz,205,64,25,12,ES_AUTOHSCROLL
+    LTEXT           "惯组噪声倍数",IDC_STATIC,146,82,49,8
+    COMBOBOX        IDC_gz_zaosheng_flag,196,81,36,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "惯组延时(ms)",IDC_STATIC,146,97,49,8
+    COMBOBOX        IDC_gz_Delay_flag,196,96,36,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "舵机延时(ms)",IDC_STATIC,146,112,49,8
+    COMBOBOX        IDC_rudder_delay_flag,196,111,36,44,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "弹运动信息",IDC_STATIC,241,8,156,90
+    EDITTEXT        IDC_LON,264,21,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LAT,314,21,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEG,367,21,25,12,ES_AUTOHSCROLL
+    LTEXT           "经度o",IDC_STATIC,243,23,20,8
+    LTEXT           "纬度o",IDC_STATIC,292,23,20,8
+    LTEXT           "高度m",IDC_STATIC,343,23,23,8
+    EDITTEXT        IDC_VN,263,58,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VU,314,58,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VE,367,58,25,12,ES_AUTOHSCROLL
+    LTEXT           "速度",IDC_STATIC,243,60,17,8
+    LTEXT           "V倾角o",IDC_STATIC,289,60,25,8
+    LTEXT           "V偏角o",IDC_STATIC,341,60,25,8
+    EDITTEXT        IDC_ROLL,264,39,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YAW,314,39,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PITCH,367,39,25,12,ES_AUTOHSCROLL
+    LTEXT           "滚转o",IDC_STATIC,243,41,20,8
+    LTEXT           "偏航o",IDC_STATIC,291,41,20,8
+    LTEXT           "俯仰o",IDC_STATIC,343,41,20,8
+    EDITTEXT        IDC_WX,263,77,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WY,314,77,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WZ,367,77,25,12,ES_AUTOHSCROLL
+    LTEXT           "wx(o)",IDC_STATIC,244,79,18,8
+    LTEXT           "wy(o)",IDC_STATIC,295,79,18,8
+    LTEXT           "wz(o)",IDC_STATIC,347,79,18,8
+    GROUPBOX        "目标运动信息",IDC_STATIC,240,99,157,48
+    LTEXT           "发动机:",IDC_STATIC,16,23,27,8
+    EDITTEXT        IDC_HEG_T,267,112,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIST,319,112,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YAW_T,370,112,25,12,ES_AUTOHSCROLL
+    LTEXT           "高度m",IDC_STATIC,243,114,23,8
+    LTEXT           "射程m",IDC_STATIC,294,114,23,8
+    LTEXT           "方位o",IDC_STATIC,347,114,20,8
+    EDITTEXT        IDC_VN_T,266,129,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VU_T,319,129,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VE_T,370,129,25,12,ES_AUTOHSCROLL
+    LTEXT           "速度",IDC_STATIC,244,131,17,8
+    LTEXT           "V倾角o",IDC_STATIC,294,131,25,8
+    LTEXT           "V偏角o",IDC_STATIC,345,131,25,8
+    GROUPBOX        "风",IDC_STATIC,241,147,156,33
+    COMBOBOX        IDC_WIND_TYPE,285,157,33,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "风类型",IDC_STATIC,260,159,25,8
+    LTEXT           "风倍数",IDC_STATIC,320,159,25,8
+    COMBOBOX        IDC_WIND_RATIO,346,157,33,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "气动",IDC_STATIC,142,131,97,50
+    EDITTEXT        IDC_qd_gz,163,139,60,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_qd_ph,163,153,60,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_qd_fy,163,167,60,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_qd_gz_bt,225,139,11,11
+    PUSHBUTTON      "...",IDC_qd_pg_bt,225,153,11,11
+    PUSHBUTTON      "...",IDC_qd_fy_bt,225,167,11,11
+    LTEXT           "滚转",IDC_STATIC,144,141,17,8
+    LTEXT           "偏航",IDC_STATIC,144,154,17,8
+    LTEXT           "俯仰",IDC_STATIC,144,167,17,8
+    LTEXT           "T2",IDC_STATIC,87,13,9,8
+    EDITTEXT        IDC_t1,47,21,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_t2,77,21,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_t3,108,21,25,12,ES_AUTOHSCROLL
+    LTEXT           "T3",IDC_STATIC,116,13,9,8
+    LTEXT           "仿真方式",IDC_STATIC,88,189,33,8
+    COMBOBOX        IDC_SIM_TYPE,125,188,41,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "vc6sim Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "vc6sim\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vc6sim.EXE\0"
+            VALUE "ProductName", "vc6sim 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_VC6SIM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_PARA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 397
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PARA DLGINIT
+BEGIN
+    IDC_ep_air_flag, 0x403, 7, 0
+0xbab8, 0xadc0, 0xabc6, "\000" 
+    IDC_ep_air_flag, 0x403, 7, 0
+0xdece, 0xadc0, 0xabc6, "\000" 
+    IDC_ep_air_flag, 0x403, 7, 0
+0xfdd5, 0xadc0, 0xabc6, "\000" 
+    IDC_ed_air_flag, 0x403, 7, 0
+0xbab8, 0xadc0, 0xabc6, "\000" 
+    IDC_ed_air_flag, 0x403, 7, 0
+0xdece, 0xadc0, 0xabc6, "\000" 
+    IDC_ed_air_flag, 0x403, 7, 0
+0xfdd5, 0xadc0, 0xabc6, "\000" 
+    IDC_gz_zaosheng_flag, 0x403, 2, 0
+0x0030, 
+    IDC_gz_zaosheng_flag, 0x403, 4, 0
+0x2e30, 0x0035, 
+    IDC_gz_zaosheng_flag, 0x403, 2, 0
+0x0031, 
+    IDC_gz_Delay_flag, 0x403, 2, 0
+0x0030, 
+    IDC_gz_Delay_flag, 0x403, 2, 0
+0x0035, 
+    IDC_gz_Delay_flag, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_rudder_delay_flag, 0x403, 2, 0
+0x0030, 
+    IDC_rudder_delay_flag, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_rudder_delay_flag, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_WIND_TYPE, 0x403, 5, 0
+0xdece, 0xe7b7, "\000" 
+    IDC_WIND_TYPE, 0x403, 5, 0
+0xe6c4, 0xe7b7, "\000" 
+    IDC_WIND_TYPE, 0x403, 5, 0
+0xb3cb, 0xe7b7, "\000" 
+    IDC_WIND_TYPE, 0x403, 5, 0
+0xe0b2, 0xe7b7, "\000" 
+    IDC_WIND_RATIO, 0x403, 4, 0
+0x2e30, 0x0030, 
+    IDC_WIND_RATIO, 0x403, 4, 0
+0x2e30, 0x0032, 
+    IDC_WIND_RATIO, 0x403, 4, 0
+0x2e30, 0x0034, 
+    IDC_WIND_RATIO, 0x403, 4, 0
+0x2e30, 0x0036, 
+    IDC_WIND_RATIO, 0x403, 4, 0
+0x2e30, 0x0038, 
+    IDC_WIND_RATIO, 0x403, 4, 0
+0x2e31, 0x0030, 
+    IDC_SIM_TYPE, 0x403, 5, 0
+0xbcb5, 0xbdba, "\000" 
+    IDC_SIM_TYPE, 0x403, 7, 0
+0xafb6, 0xa6c1, 0xa7d1, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 vc6sim(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\vc6sim.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
